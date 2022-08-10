@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directives.component.scss']
 })
 export class DirectivesComponent implements OnInit {
-
+  size = 10
+  font = 'Arial'
+  color = 'green'
+  classes = ['green-title','small-title']
+  underline = 'underline'
   constructor() { }
 
   ngOnInit(): void {
