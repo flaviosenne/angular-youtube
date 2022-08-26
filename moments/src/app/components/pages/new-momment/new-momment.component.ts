@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-momment.component.scss']
 })
 export class NewMommentComponent implements OnInit {
-
+  btnText = "Compartilhar!"
   constructor() { }
 
   ngOnInit(): void {
