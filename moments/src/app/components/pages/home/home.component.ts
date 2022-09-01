@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 export class HomeComponent implements OnInit {
   allMoments: Moment[] = []
   moments: Moment[] = []
-  baseAPiUrl = environment.baseApiUrl
+  baseApiUrl = environment.baseApiUrl
 
   constructor(private momentService: MomentService) { }
 
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
       const {data} = items
 
       data.map(item =>{
-        item.created_at = new Date(item.created_at!).toLocaleTimeString('pt-BR')
+        item.created_at = new Date(item.created_at!).toLocaleDateString('pt-BR')
       })
       
       this.allMoments = data
